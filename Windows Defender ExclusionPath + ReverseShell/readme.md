@@ -1,4 +1,4 @@
-[Win10] Windows Defender ExclusionPath + ReverseShell
+Windows Defender ExclusionPath + ReverseShell
 =============================================
 
 This scrip will run PowerShell as administrator privilege and add directory of current User into Microsoft Windows Defender Exclusion. Then PowerShell will download payload file and run the payload. Last, exit the PowerShell.
