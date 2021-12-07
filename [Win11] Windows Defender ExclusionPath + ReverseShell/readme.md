@@ -24,4 +24,4 @@ This scrip will run PowerShell as administrator privilege and add directory of c
   
 P/S : Tested on Windows 11 Version 21H1(OS Build 22000.348)
   
-![Win Ver](https://github.com/auffAzani/RubberDucky/blob/main/Windows%20Defender%20ExclusionPath%20%2B%20ReverseShell/Winver.PNG)
+![Win Ver](https://github.com/auffAzani/RubberDucky/blob/main/%5BWin11%5D%20Windows%20Defender%20ExclusionPath%20%2B%20ReverseShell/WinVer.png)
