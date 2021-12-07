@@ -15,7 +15,9 @@ Windows Defender ExclusionPath + ReverseShell
 > $ set LPORT port <br />
 > $ run
   
-4. Connect RubberDucky to Target Machine
+4. Copy payload.dd script to Pi Pico
+  
+5. Connect RubberDucky to Target Machine
   
 P/S : Tested on Windows 10 Version 21H1(OS Build 19043.1348)
   
